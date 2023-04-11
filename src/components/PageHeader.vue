@@ -5,18 +5,18 @@
     </div>
     <div> <!-- LINK NAVBAR -->
       <ul class="navbar-links">
-        <li v-for="(link, i) in arrayNav" :key="i">
+        <li v-for="(link, i) in arrayNavSX" :key="i">
+          <img :src=" link.icon " alt="">
           <a class="nav-link" :href="link.href">{{ link.text }}</a>
         </li>
       </ul>
     </div>
     <div>
       <ul class="navbar-links">
-        <li>
-          <a class="nav-link" href="#">LOREM</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">LOREM</a>
+        <li v-for="(link, i) in arrayNavDX" :key="i">
+          <img :src=" link.icon " alt="">
+          <i :class="link.icon"></i>
+          <a class="nav-link" :href="link.href">{{ link.text }}</a>
         </li>
       </ul>
 
@@ -29,7 +29,8 @@
 export default {
   name: 'PageHeader',
   props: {
-    arrayNav: Array,
+    arrayNavSX: Array,
+    arrayNavDX: Array,
   },
 
   data() {
@@ -61,7 +62,7 @@ export default {
 }
 
 .nav-link {
-  padding: 1rem;
+  padding: 0 1rem;
   text-decoration: none;
   display: inline-block;
   color: $text-color-white;
@@ -70,5 +71,20 @@ export default {
 nav.my-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 50px;
+
 }
+li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: $text-color-white;
+
+}
+li img{
+  filter:invert(1) ;
+  height: 16px;
+}
+
 </style>
