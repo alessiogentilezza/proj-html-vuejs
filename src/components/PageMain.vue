@@ -1,73 +1,94 @@
 <template>
   <section class="no-margin first">
-<ul class="d-flex">
-  <li><img src="/h3-img-1.jpg" alt=""></li>
-  <li><img src="/h3-img-2.jpg" alt=""></li>
-  <li><img src="/h3-img-3.jpg" alt=""></li>
-  <li><img src="/h3-img-4.jpg" alt=""></li>
-</ul>    
+    <ul class="d-flex">
+      <li><img src="/h3-img-1.jpg" alt=""></li>
+      <li><img src="/h3-img-2.jpg" alt=""></li>
+      <li><img src="/h3-img-3.jpg" alt=""></li>
+      <li><img src="/h3-img-4.jpg" alt=""></li>
+    </ul>
   </section>
 
   <section class="no-margin">
     <div class="title">
-          <h3>"FORGET THE TRENDY PI77A SHOPS THIS HINDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h3>
-
+      <p><i class="fa-solid fa-quote-left"></i></p>
+      <h3>"FORGET THE TRENDY PI77A SHOPS THIS HINDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h3>
+      <h6>WASHINGTON POST 2018</h6>
+      <ul class="d-flex">
+        <li class="circle first"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+      </ul>
     </div>
-
-<ul class="d-flex">
-  <li><img src="/h3-testimonials-bckgrnd.jpg" alt=""></li>
-</ul>
-
+    <ul class="d-flex">
+      <li><img src="/h3-testimonials-bckgrnd.jpg" alt=""></li>
+    </ul>
   </section>
-
-
-
-
-
-
-
-  </template>
+</template>
   
-  <script>
-  
-  export default {
-    name: 'PageMain',
-  
-    data() {
-      return {
-      }
-    },
-  
-  }
-  </script>
-  
-  <style lang="scss" scoped>
-  @use "../styles/general.scss";
-  @use "../styles/partials/variables" as *;
+<script>
 
-ul{
-  margin: 10px 0;
+export default {
+  name: 'PageMain',
+
+  data() {
+    return {
+    }
+  },
 
 }
-  .first li{
-    width: calc(100% / 4);
-    list-style: none;
-    margin: 0 5px;
-  }
+</script>
+  
+<style lang="scss" scoped>
+@use "../styles/general.scss";
+@use "../styles/partials/variables" as *;
 
-  img {
-    width:  100%;
-  }
+ul {
+  margin: 5px 0;
 
-  .title{
-    width: 50%;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+}
 
+.first li {
+  width: calc(100% / 4);
+  list-style: none;
+  margin: 0 2.5px;
+}
 
-  }
+img {
+  width: 100%;
+}
 
+.title {
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: $text-color-gray;
+}
+
+p i {
+  color: $text-color-gold;
+  font-size: 70px;
+}
+
+h6 {
+  color: $text-color-red;
+  padding: 1rem;
+
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #EBEBDE;
+  margin: 1rem 0.2rem;
+  list-style: none;
+
+}
+
+.circle.first {
+  background-color: #B7903C;
+}
 </style>
