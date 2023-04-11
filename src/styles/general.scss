@@ -1,6 +1,6 @@
 @use "./partials/variables";
 
-@import "bootstrap";
+// @import "bootstrap";
 
 
 
@@ -14,3 +14,9 @@ body {
     font-family: sans-serif;
     // background-color: black;
 }
+
+.my-container {
+    width: 90%;
+    margin: 0 auto;
+}
+

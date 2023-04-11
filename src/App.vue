@@ -7,7 +7,43 @@ import PageFooter from './components/PageFooter.vue';
 export default {
   data() {
     return {
-      
+      navLinks: [
+        {
+          href: "#home",
+          text: "HOME",
+        },
+         {
+         href: "#pages",
+         text: "PAGES",
+         },
+         {
+         href: "#menu",
+         text: "MENU",
+        },
+         {
+         href: "#event",
+         text: "EVENT",
+         },
+         {
+         href: "#blog",
+         text: "BLOG",
+         },
+         {
+         href: "#landing",
+         text: "LANDING",
+         },
+         {
+         href: "#cart",
+         text: "CART",
+         },
+         {
+         href: "#search",
+         text: "SEARCH",
+         },
+      ],
+
+
+
     }
   },
   components: {
@@ -21,18 +57,22 @@ export default {
 </script>
 
 <template>
-
-  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea totam omnis quis, aut, consequuntur architecto autem cumque possimus error minus expedita in debitis! Veniam amet ducimus illum modi iure, eaque nisi totam recusandae consequatur! Consectetur, doloremque quisquam harum cumque et reiciendis tempora iste, sed consequuntur magni libero eos illum.</p>
-<div>
-
-</div>
+  <header>
+    <PageHeader :arrayNav="navLinks" />
+  </header>
 </template>
 
 <style lang="scss">
 @use "./styles/general.scss";
 @use "./styles/partials/variables" as *;
 
-p{
-  color: $rosso;
+header {
+  height: 500px;
+  background-color: $background-color-first;
+  padding-top: 70px;
+}
+
+p {
+  color: red;
 }
 </style>
