@@ -14,22 +14,34 @@ export default {
           text: "HOME",
         },
         {
+          icon: "",
           href: "#pages",
           text: "PAGES",
         },
         {
+          icon: "",
           href: "#menu",
           text: "MENU",
         },
         {
+          icon: "",
+          logo: "/h5-logo-divided-header.png",
+          text: "",
+
+        },
+
+        {
+          icon: "",
           href: "#event",
           text: "EVENT",
         },
         {
+          icon: "",
           href: "#blog",
           text: "BLOG",
         },
         {
+          icon: "",
           href: "#landing",
           text: "LANDING",
         },
@@ -72,14 +84,16 @@ export default {
 
 header {
   height: 500px;
+  // display: flex;
+  // flex-direction: column;
   background-color: $background-color-first;
-  // background-color: #8F8F8F;
-  padding-top: 70px;
+  padding-top: 30px;
 
-  background-size: 100px 100px;
-  /* dimensione dei punti */
+  // background-color: #8F8F8F;
+
+    background-size: 100px 100px;
   background-image: radial-gradient(#8F8F8F 1px, transparent 0);
-  /* effetto puntinato */
+  
 
 }
 </style>

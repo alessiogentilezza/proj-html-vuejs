@@ -1,27 +1,40 @@
 <template>
   <nav class="my-container">
+
+    <!-- BOTTONE -->
+
     <div>
       <button t class="my-btn">ORDER ONLINE</button>
     </div>
-    <div> <!-- LINK NAVBAR -->
+
+    <!-- LINK NAVBAR SX -->
+
+    <div>
       <ul class="navbar-links">
         <li v-for="(link, i) in arrayNavSX" :key="i">
-          <img :src=" link.icon " alt="">
-          <a class="nav-link" :href="link.href">{{ link.text }}</a>
+          <img v-if="link.icon != ''" class="img-small" :src="link.icon" alt="">
+          <img id="logo" :src="link.logo" alt="">
+          <a v-if="link.text != ''" class="nav-link" :href="link.href">{{ link.text }}</a>
         </li>
       </ul>
     </div>
+
+    <!-- LINK NAVBAR DX -->
+
     <div>
       <ul class="navbar-links">
         <li v-for="(link, i) in arrayNavDX" :key="i">
-          <img :src=" link.icon " alt="">
+          <img v-if="link.icon != ''" class="img-small" :src="link.icon" alt="">
           <i :class="link.icon"></i>
           <a class="nav-link" :href="link.href">{{ link.text }}</a>
         </li>
       </ul>
-
     </div>
   </nav>
+  <div class="wrap">
+    <img src="/h3-rev-img-5.png" alt="">
+    <img id="pizza-top" src="/h3-rev-img-6.png" alt="">
+  </div>
 </template>
   
 <script>
@@ -41,10 +54,18 @@ export default {
 
 }
 </script>
-  
+
 <style lang="scss" scoped>
 @use "../styles/general.scss";
 @use "../styles/partials/variables" as *;
+
+nav.my-container {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
 
 .my-btn {
   background-color: $background-color-second;
@@ -68,23 +89,37 @@ export default {
   color: $text-color-white;
 }
 
-nav.my-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-
-}
 li {
   height: 100%;
   display: flex;
   align-items: center;
   color: $text-color-white;
-
 }
-li img{
-  filter:invert(1) ;
+
+.img-small {
+  filter: invert(1);
   height: 16px;
 }
 
+#logo {
+  height: 50px;
+  text-align: center;
+}
+
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+
+  & img {
+    height: 80%;
+  }
+}
+
+#pizza-top {
+  position: absolute;
+  z-index: 10;
+}
 </style>
