@@ -1,16 +1,16 @@
 <template>
   <nav class="my-container">
 
-    <!-- BOTTONE -->
+    <!-- LINK NAVBAR SX -->
 
-    <div>
+    <div class="col">
       <button t class="my-btn">ORDER ONLINE</button>
     </div>
 
-    <!-- LINK NAVBAR SX -->
+    <!-- LINK NAVBAR CC -->
 
-    <div>
-      <ul class="navbar-links">
+    <div class="col">
+      <ul class="navbar-links cc">
         <li v-for="(link, i) in arrayNavSX" :key="i">
           <img v-if="link.icon != ''" class="img-small" :src="link.icon" alt="">
           <img id="logo" :src="link.logo" alt="">
@@ -21,8 +21,8 @@
 
     <!-- LINK NAVBAR DX -->
 
-    <div>
-      <ul class="navbar-links">
+    <div class="col">
+      <ul class="navbar-links dx">
         <li v-for="(link, i) in arrayNavDX" :key="i">
           <img v-if="link.icon != ''" class="img-small" :src="link.icon" alt="">
           <i :class="link.icon"></i>
@@ -55,16 +55,26 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "../styles/general.scss";
 @use "../styles/partials/variables" as *;
 
 nav.my-container {
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
+}
+.navbar-links {
+  display: flex;
+}
+
+ul.navbar-links.cc {
+  justify-content: center;
+}
+ul.navbar-links.dx {
+  justify-content: flex-end;
 }
 
 .my-btn {
@@ -75,18 +85,14 @@ nav.my-container {
   cursor: pointer;
 }
 
-.navbar-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-
 .nav-link {
   padding: 0 1rem;
   text-decoration: none;
-  display: inline-block;
   color: $text-color-white;
+}
+
+.col {
+  width: calc(100% / 3);
 }
 
 li {
@@ -98,7 +104,7 @@ li {
 
 .img-small {
   filter: invert(1);
-  height: 16px;
+  height: 10px;
 }
 
 #logo {
@@ -121,5 +127,4 @@ li {
 #pizza-top {
   position: absolute;
   z-index: 10;
-}
-</style>
+}</style>

@@ -23,6 +23,30 @@
       <li><img src="/h3-testimonials-bckgrnd.jpg" alt=""></li>
     </ul>
   </section>
+
+  <section>
+    <div class="d-flex">
+      <div class="col">
+        <img src="/h1-img-4.jpg" alt="">
+
+      </div>
+      <div class="col dx">
+        <h3>SPECIALS*</h3>
+        <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</div>        
+        <h5 class="price">$10</h5><h5>COMBO PICCOLO</h5>
+        <p class="txt">Lorem ipsum dolor sit amet.</p>
+        <h3>SPECIALS*</h3>
+        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</p>
+        <h5 class="price">$20</h5><h5>COMBO PICCOLO</h5>
+        <p class="txt">Lorem ipsum dolor sit amet.</p>
+        <h3>SPECIALS*</h3>
+        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</p>
+        <h5 class="price">$30</h5><h5>COMBO PICCOLO</h5>
+        <p class="txt">Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+
+  </section>
 </template>
   
 <script>
@@ -90,5 +114,29 @@ h6 {
 
 .circle.first {
   background-color: #B7903C;
+}
+.col {
+  width: 50%;
+  p{
+    padding-left: 2rem;
+  }
+}
+.col.dx{
+padding: 5rem;}
+
+h5{
+  display: inline-block;
+  padding: 1rem 1rem 1rem 0;
+}
+h3{
+  padding:1rem 0;
+}
+.price{
+  color: $text-color-red;
+
+}
+.txt{
+  color: #888888;
+
 }
 </style>
