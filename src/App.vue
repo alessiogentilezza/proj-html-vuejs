@@ -76,6 +76,9 @@ export default {
   <header>
     <PageHeader :arrayNavSX="navLinksSx" :arrayNavDX="navLinksDx" />
   </header>
+  <main>
+  <PageMain/>
+  </main>
 </template>
 
 <style lang="scss">

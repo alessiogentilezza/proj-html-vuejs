@@ -102,7 +102,7 @@ li {
 }
 
 #logo {
-  height: 50px;
+  height: 70px;
   text-align: center;
 }
 
