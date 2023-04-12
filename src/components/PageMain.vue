@@ -101,14 +101,44 @@
 
   <!-- SETTIMA SEZIONE -->
 
-  <section class="col-6">
-    <ul class="d-flex space-between" >
-      <li class="pizza-wrap"><img class="pizza left" src="/h3-product-img-1a-100x100.png"></li>
-      <li><img src="/h3-product-img-2a-150x150.png"></li>
-      <li><img src="/h3-product-img-3a-150x150.png"></li>
-      <li><img src="/h3-product-img-4a-150x150.png"></li>
-      <li><img src="/h3-product-img-5a-150x150.png"></li>
-      <li class="pizza-wrap"><img class="pizza right" src="/h3-product-img-6a-100x100.png"></li>
+  <section id="pizza">
+    <div class="title-wrap ">
+      <h6>CHOSE YOUR FLAVOR</h6>
+      <h3 class="txt-dark-gray ">THE BEST PIZZA MENU IN TOWN</h3>
+      <p class="txt-light-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugiat fuga neque sunt
+        qui quidem minus ad possimus saepe aut!
+      </p>
+
+    </div>
+
+    <ul class="d-flex space-between">
+      <li class="pizza-wrap"><img class="pizza left" src="/h3-product-img-1a-100x100.png">
+        <p class="info name-left">BISMARCK</p>
+        <span class="info price-left">$25.00</span>
+        <span class="info price-left-red">$30.00</span>
+      </li>
+      <li><img src="/h3-product-img-2a-150x150.png">
+        <p>FIORI DI ZUCCA</p>
+        <span>$7.00 - </span>
+        <span>$50.00</span>
+      </li>
+      <li><img src="/h3-product-img-3a-150x150.png">
+        <p>VALDOSTANA</p>
+        <span>$55.00</span>
+      </li>
+      <li><img src="/h3-product-img-4a-150x150.png">
+        <p>PIZZA TARTUFATA</p>
+        <span>$45.00</span>
+      </li>
+      <li><img src="/h3-product-img-5a-150x150.png">
+        <p>FRANCESCANA</p>
+        <span>$25.00</span>
+      </li>
+      <li class="pizza-wrap"><img class="pizza right" src="/h3-product-img-6a-100x100.png">
+        <p class="info name-right">CAMPAGNOLA</p>
+        <!-- <span class="info price-right">$95.00</span> -->
+        <span class="info price-right-red">$50.00&nbsp-&nbsp$95.00</span>
+      </li>
     </ul>
   </section>
 </template>
@@ -132,8 +162,8 @@ export default {
 
 ul {
   margin: 5px 0;
-  justify-content: center;
-
+  list-style: none;
+  text-align: center;
 
   li img {
     width: 100%;
@@ -148,29 +178,106 @@ ul {
   margin: 0 2.5px;
 }
 
-#clients-sec{
+#clients-sec {
   background-color: $background-color-third;
+  padding: 3rem 0;
 }
+
 .col-5 li {
   width: calc(100% / 10);
+}
+
+#pizza {
+  position: relative;
+
+}
+
+.title-wrap {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 0px;
+  transform: translate(-50%, 0%);
+  padding: 3rem 0;
 }
 
 .pizza-wrap {
   position: relative;
 }
-.pizza{
+
+.pizza {
   position: absolute;
-    top: -75px;
-    z-index: 10;
-    width: 150px;
+  top: -94px;
+  // top: -75px;
+  z-index: 10;
+  width: 150px;
+}
 
+.info {
+  position: absolute;
+  z-index: 10;
+}
+
+.info.name-left {
+  top: 58.5px;
+  // top: -18.5px;
+  left: 0px;
+  color: $text-color-gold;
+}
+
+.info.price-left {
+  top: 77px;
+  // top: 1.5px;
+  left: -15px;
+  color: $text-color-light-gray;
+  text-decoration: line-through;
 
 }
-.pizza.left{
-    left: -75px;
+
+.info.price-left-red {
+  top: 77px;
+  // top: 1.5px;
+  left: 40px;
+  color: $text-color-red;
 }
-.pizza.right{
-    right: -75px;
+
+.info.name-right {
+  top: 58.5px;
+  // top: -18.5px;
+  right: -10px;
+  color: $text-color-gold;
+}
+
+.info.price-right {
+  top: 77px;
+  // top: 1.5px;
+  right: -15px;
+  color: $text-color-light-gray;
+  text-decoration: line-through;
+
+}
+
+.info.price-right-red {
+  top: 77px;
+  // top: 1.5px;
+  right: -20px;
+}
+
+li p {
+  color: $text-color-gold;
+}
+
+li span {
+  color: $text-color-red;
+}
+
+.pizza.left {
+  left: -75px;
+}
+
+.pizza.right {
+  right: -75px;
 }
 
 p i {
@@ -184,7 +291,6 @@ h6 {
 }
 
 .circle {
-
   height: 10px;
   width: 10px;
   border-radius: 50%;
