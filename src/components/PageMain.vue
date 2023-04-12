@@ -33,8 +33,8 @@
   <section>
     <div class="d-flex">
       <div class="col sx-img">
-        <!-- <img id="img-back" src="/h1-img-4.jpg" alt=""> -->
-        <!-- <img id="img-front" src="/h1-img-7n.png" alt=""> -->
+        <img id="img-back" src="/h1-img-4.jpg" alt="">
+        <img id="img-front" src="/h1-img-7n.png" alt="">
       </div>
       <div class="col dx-txt">
         <h3>SPECIALS*</h3>
@@ -66,7 +66,7 @@
 
       <div class="big sx"></div>
       <div class="big center">
-        <p class="title text-color-white">GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!</p>
+        <p class="text-color-white">GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!</p>
       </div>
 
       <div class="big dx"></div>
@@ -159,14 +159,10 @@ h6 {
 
 }
 
-.col.sx-img {
-  background-image: url(/h1-img-4.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-
-}
 .col.dx-txt {
-  padding: 5rem;
+  padding: 0 5rem;
+
+
 }
 
 h5 {
@@ -264,6 +260,7 @@ h3 {
 }
 
 .big.center {
+  position: relative;
   background-image: url(/h3-background-img.jpg);
   background-size: 200%;
   background-repeat: no-repeat;
@@ -272,6 +269,11 @@ h3 {
   background-position-y: 15%;
 
   p {
+    position: absolute;
+    z-index: 10;
+    left: 10%;
+    top: -10%;
+    width: 30%;
     font-size: 40px;
     font-weight: bolder;
   }
