@@ -1,5 +1,6 @@
 @use "./partials/variables";
 @import "@fontsource/montserrat";
+@import "@fontsource/pathway-gothic-one";
 
 // @import "bootstrap";
 
@@ -12,12 +13,17 @@
 }
 
 body {
+    min-width: 1000px;
+    overflow-x: hidden;    
+
     // font-family: "Montserrat", sans-serif;
-    font-family: Helvetica, sans-serif
+    font-family: Helvetica, sans-serif;
+    // font-family: "Pathway Gothic One", sans-serif; 
     
 }
 
 .my-container {
+    min-width: 80%;
     max-width: 90%;
     margin: 0 auto;
 }

@@ -1,7 +1,7 @@
 <template>
   <!-- PRIMA SEZIONE -->
 
-  <section class="no-margin first">
+  <section class="no-margin col-sec">
     <ul class="d-flex">
       <li><img src="/h3-img-1.jpg" alt=""></li>
       <li><img src="/h3-img-2.jpg" alt=""></li>
@@ -42,13 +42,9 @@
         <h5 class="price">$10</h5>
         <h5>COMBO PICCOLO</h5>
         <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
-        <h3>SPECIALS*</h3>
-        <p class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</p>
         <h5 class="price">$20</h5>
         <h5>COMBO PICCOLO</h5>
         <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
-        <h3>SPECIALS*</h3>
-        <p class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</p>
         <h5 class="price">$30</h5>
         <h5>COMBO PICCOLO</h5>
         <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
@@ -79,6 +75,17 @@
 
 
   </section>
+
+  <!-- QUINTA SEZIONE -->
+
+  <section class="no-margin col-sec">
+    <ul class="d-flex">
+      <li><img src="/h1-team-1a-700x700.jpg"></li>
+      <li><img src="/h1-team-2a.jpg"></li>
+      <li><img src="/h1-team-3a.jpg"></li>
+      <li><img src="/h1-team-4a.jpg"></li>
+    </ul>
+  </section>
 </template>
   
 <script>
@@ -106,7 +113,7 @@ ul {
   }
 }
 
-.first li {
+.col-sec li {
   width: calc(100% / 4);
   list-style: none;
   margin: 0 2.5px;
@@ -156,13 +163,10 @@ h6 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .col.dx-txt {
   padding: 0 5rem;
-
-
 }
 
 h5 {
