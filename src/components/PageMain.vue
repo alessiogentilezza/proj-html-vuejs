@@ -1,4 +1,6 @@
 <template>
+  <!-- PRIMA SEZIONE -->
+
   <section class="no-margin first">
     <ul class="d-flex">
       <li><img src="/h3-img-1.jpg" alt=""></li>
@@ -8,8 +10,10 @@
     </ul>
   </section>
 
+  <!-- SEDONDA SEZIONE -->
+
   <section class="no-margin">
-    <div class="title">
+    <div class="title txt-dark-gray">
       <p><i class="fa-solid fa-quote-left"></i></p>
       <h3>"FORGET THE TRENDY PI77A SHOPS THIS HINDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h3>
       <h6>WASHINGTON POST 2018</h6>
@@ -24,27 +28,55 @@
     </ul>
   </section>
 
+  <!-- TERZA SEZIONE -->
+
   <section>
     <div class="d-flex">
-      <div class="col">
-        <img src="/h1-img-4.jpg" alt="">
-
+      <div class="col sx-img">
+        <!-- <img id="img-back" src="/h1-img-4.jpg" alt=""> -->
+        <!-- <img id="img-front" src="/h1-img-7n.png" alt=""> -->
       </div>
-      <div class="col dx">
+      <div class="col dx-txt">
         <h3>SPECIALS*</h3>
-        <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</div>        
-        <h5 class="price">$10</h5><h5>COMBO PICCOLO</h5>
-        <p class="txt">Lorem ipsum dolor sit amet.</p>
+        <div class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</div>
+        <h5 class="price">$10</h5>
+        <h5>COMBO PICCOLO</h5>
+        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
         <h3>SPECIALS*</h3>
-        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</p>
-        <h5 class="price">$20</h5><h5>COMBO PICCOLO</h5>
-        <p class="txt">Lorem ipsum dolor sit amet.</p>
+        <p class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</p>
+        <h5 class="price">$20</h5>
+        <h5>COMBO PICCOLO</h5>
+        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
         <h3>SPECIALS*</h3>
-        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</p>
-        <h5 class="price">$30</h5><h5>COMBO PICCOLO</h5>
-        <p class="txt">Lorem ipsum dolor sit amet.</p>
+        <p class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</p>
+        <h5 class="price">$30</h5>
+        <h5>COMBO PICCOLO</h5>
+        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
+  </section>
+
+  <!-- QUARTA SEZIONE -->
+
+  <section>
+    <div class="d-flex wrap">
+      <div class="small sx top"></div>
+      <div class="small center top"></div>
+      <div class="small dx top"></div>
+
+      <div class="big sx"></div>
+      <div class="big center">
+        <p class="title text-color-white">GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!</p>
+      </div>
+
+      <div class="big dx"></div>
+
+      <div class="small sx bottom"></div>
+      <div class="small center bottom"></div>
+      <div class="small dx bottom"></div>
+    </div>
+
+
 
   </section>
 </template>
@@ -69,26 +101,15 @@ export default {
 ul {
   margin: 5px 0;
 
+  li img {
+    width: 100%;
+  }
 }
 
 .first li {
   width: calc(100% / 4);
   list-style: none;
   margin: 0 2.5px;
-}
-
-img {
-  width: 100%;
-}
-
-.title {
-  width: 50%;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: $text-color-gray;
 }
 
 p i {
@@ -98,8 +119,7 @@ p i {
 
 h6 {
   color: $text-color-red;
-  padding: 1rem;
-
+  padding: .1rem;
 }
 
 .circle {
@@ -109,34 +129,160 @@ h6 {
   background-color: #EBEBDE;
   margin: 1rem 0.2rem;
   list-style: none;
-
 }
 
 .circle.first {
   background-color: #B7903C;
 }
+
+#img-back {
+  width: 100%;
+}
+
 .col {
+  position: relative;
   width: 50%;
-  p{
-    padding-left: 2rem;
+
+  p {
+    padding-left: 40px;
   }
 }
-.col.dx{
-padding: 5rem;}
 
-h5{
+#img-front,
+.title {
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.col.sx-img {
+  background-image: url(/h1-img-4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.col.dx-txt {
+  padding: 5rem;
+}
+
+h5 {
   display: inline-block;
   padding: 1rem 1rem 1rem 0;
 }
-h3{
-  padding:1rem 0;
+
+h3 {
+  padding: 1rem 0;
 }
-.price{
+
+.price {
   color: $text-color-red;
+}
+
+.text-color-white {
+  color: $text-color-white;
+}
+
+.txt-dark-gray {
+  color: $text-color-dark-gray;
+}
+
+.txt-light-gray {
+  color: $text-color-light-gray;
+}
+
+.small {
+  height: 100px;
+}
+
+.big {
+  height: 200px;
 
 }
-.txt{
-  color: #888888;
 
+.center {
+  width: 90%;
+}
+
+.sx,
+.dx {
+  width: 5%;
+}
+
+.small.sx.top {
+  background-image: url(/h3-background-img.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-position-x: 100%;
+}
+
+.small.sx.bottom {
+  background-image: url(/h3-background-img.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+  background-position-x: 100%;
+}
+
+.small.center.top {
+  background-image: url(/h3-background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  // background-position-x: 100%;
+}
+
+.small.center.bottom {
+  background-image: url(/h3-background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+  background-position-x: 100%;
+}
+
+.small.dx.top {
+  background-image: url(/h3-background-img.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-position-x: 0%;
+}
+
+.small.dx.bottom {
+  background-image: url(/h3-background-img.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+  background-position-x: 0%;
+}
+
+.big.sx {
+  background-image: url(/h3-background-img.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-position-x: 100%;
+}
+
+.big.center {
+  background-image: url(/h3-background-img.jpg);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position-x: 70%;
+  background-position-y: 15%;
+
+  p {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+}
+
+
+.big.dx {
+  background-image: url(/h3-background-img.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 0%;
 }
 </style>
+

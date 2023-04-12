@@ -94,7 +94,7 @@ header {
 
   // background-color: #8F8F8F;
 
-    background-size: 100px 100px;
+  background-size: 100px 100px;
   background-image: radial-gradient(#8F8F8F 1px, transparent 0);
   
 
