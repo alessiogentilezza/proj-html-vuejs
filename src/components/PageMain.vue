@@ -1,7 +1,7 @@
 <template>
   <!-- PRIMA SEZIONE -->
 
-  <section class="no-margin col-sec">
+  <section class="no-margin col-sec4 first">
     <ul class="d-flex">
       <li><img src="/h3-img-1.jpg" alt=""></li>
       <li><img src="/h3-img-2.jpg" alt=""></li>
@@ -43,10 +43,10 @@
         <h5>COMBO PICCOLO</h5>
         <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
         <h5 class="price">$20</h5>
-        <h5>COMBO PICCOLO</h5>
+        <h5>COMBO MEZZO</h5>
         <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
         <h5 class="price">$30</h5>
-        <h5>COMBO PICCOLO</h5>
+        <h5>COMBO GRANDE</h5>
         <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
@@ -78,7 +78,7 @@
 
   <!-- QUINTA SEZIONE -->
 
-  <section class="no-margin col-sec">
+  <section class="col-sec4">
     <ul class="d-flex">
       <li><img src="/h1-team-1a-700x700.jpg"></li>
       <li><img src="/h1-team-2a.jpg"></li>
@@ -86,6 +86,23 @@
       <li><img src="/h1-team-4a.jpg"></li>
     </ul>
   </section>
+
+  <!-- QUINTA SEZIONE -->
+
+  <section class="col-sec5">
+    <ul class="d-flex">
+      <li><img src="/h1-clients-img-1.png"></li>
+      <li><img src="/h1-clients-img-2.png"></li>
+      <li><img src="/h1-clients-img-3.png"></li>
+      <li><img src="/h1-clients-img-4.png"></li>
+      <li><img src="/h1-clients-img-5.png"></li>
+    </ul>
+  </section>
+
+
+
+
+
 </template>
   
 <script>
@@ -113,12 +130,15 @@ ul {
   }
 }
 
-.col-sec li {
+.col-sec4 li {
   width: calc(100% / 4);
-  list-style: none;
+}
+.col-sec4.first li {
   margin: 0 2.5px;
 }
-
+.col-sec5 li {
+  width: calc(100% / 10);
+}
 p i {
   color: $text-color-gold;
   font-size: 70px;
@@ -155,7 +175,7 @@ h6 {
   }
 }
 
-#img-front,
+#img-front, 
 .title {
   width: 50%;
   text-align: center;
