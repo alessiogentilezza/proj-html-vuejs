@@ -1,7 +1,7 @@
 <template>
   <!-- PRIMA SEZIONE -->
 
-  <section class="no-margin col-sec4 first">
+  <section class="no-margin col-4 first">
     <ul class="d-flex">
       <li><img src="/h3-img-1.jpg" alt=""></li>
       <li><img src="/h3-img-2.jpg" alt=""></li>
@@ -78,7 +78,7 @@
 
   <!-- QUINTA SEZIONE -->
 
-  <section class="col-sec4">
+  <section class="col-4">
     <ul class="d-flex">
       <li><img src="/h1-team-1a-700x700.jpg"></li>
       <li><img src="/h1-team-2a.jpg"></li>
@@ -87,9 +87,9 @@
     </ul>
   </section>
 
-  <!-- QUINTA SEZIONE -->
+  <!-- SESTA SEZIONE -->
 
-  <section class="col-sec5">
+  <section id="clients-sec" class="col-5 ">
     <ul class="d-flex">
       <li><img src="/h1-clients-img-1.png"></li>
       <li><img src="/h1-clients-img-2.png"></li>
@@ -99,12 +99,20 @@
     </ul>
   </section>
 
+  <!-- SETTIMA SEZIONE -->
 
-
-
-
+  <section class="col-6">
+    <ul class="d-flex space-between" >
+      <li class="pizza-wrap"><img class="pizza left" src="/h3-product-img-1a-100x100.png"></li>
+      <li><img src="/h3-product-img-2a-150x150.png"></li>
+      <li><img src="/h3-product-img-3a-150x150.png"></li>
+      <li><img src="/h3-product-img-4a-150x150.png"></li>
+      <li><img src="/h3-product-img-5a-150x150.png"></li>
+      <li class="pizza-wrap"><img class="pizza right" src="/h3-product-img-6a-100x100.png"></li>
+    </ul>
+  </section>
 </template>
-  
+
 <script>
 
 export default {
@@ -117,28 +125,54 @@ export default {
 
 }
 </script>
-  
+
 <style lang="scss" scoped>
 @use "../styles/general.scss";
 @use "../styles/partials/variables" as *;
 
 ul {
   margin: 5px 0;
+  justify-content: center;
+
 
   li img {
     width: 100%;
   }
 }
 
-.col-sec4 li {
+.col-4 li {
   width: calc(100% / 4);
 }
-.col-sec4.first li {
+
+.col-4.first li {
   margin: 0 2.5px;
 }
-.col-sec5 li {
+
+#clients-sec{
+  background-color: $background-color-third;
+}
+.col-5 li {
   width: calc(100% / 10);
 }
+
+.pizza-wrap {
+  position: relative;
+}
+.pizza{
+  position: absolute;
+    top: -75px;
+    z-index: 10;
+    width: 150px;
+
+
+}
+.pizza.left{
+    left: -75px;
+}
+.pizza.right{
+    right: -75px;
+}
+
 p i {
   color: $text-color-gold;
   font-size: 70px;
@@ -150,6 +184,7 @@ h6 {
 }
 
 .circle {
+
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -175,7 +210,7 @@ h6 {
   }
 }
 
-#img-front, 
+#img-front,
 .title {
   width: 50%;
   text-align: center;
