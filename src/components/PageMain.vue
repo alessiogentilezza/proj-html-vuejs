@@ -59,20 +59,15 @@
       <div class="small sx top"></div>
       <div class="small center top"></div>
       <div class="small dx top"></div>
-
       <div class="big sx"></div>
       <div class="big center">
         <p class="text-color-white">GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!</p>
       </div>
-
       <div class="big dx"></div>
-
       <div class="small sx bottom"></div>
       <div class="small center bottom"></div>
       <div class="small dx bottom"></div>
     </div>
-
-
 
   </section>
 
@@ -108,9 +103,7 @@
       <p class="txt-light-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugiat fuga neque sunt
         qui quidem minus ad possimus saepe aut!
       </p>
-
     </div>
-
     <ul class="d-flex space-between">
       <li class="pizza-wrap"><img class="pizza left" src="/h3-product-img-1a-100x100.png">
         <p class="info name-left">BISMARCK</p>
@@ -136,7 +129,6 @@
       </li>
       <li class="pizza-wrap"><img class="pizza right" src="/h3-product-img-6a-100x100.png">
         <p class="info name-right">CAMPAGNOLA</p>
-        <!-- <span class="info price-right">$95.00</span> -->
         <span class="info price-right-red">$50.00&nbsp-&nbsp$95.00</span>
       </li>
     </ul>
@@ -144,15 +136,12 @@
 </template>
 
 <script>
-
 export default {
   name: 'PageMain',
-
   data() {
     return {
     }
   },
-
 }
 </script>
 
@@ -189,7 +178,6 @@ ul {
 
 #pizza {
   position: relative;
-
 }
 
 .title-wrap {
@@ -209,7 +197,6 @@ ul {
 .pizza {
   position: absolute;
   top: -94px;
-  // top: -75px;
   z-index: 10;
   width: 150px;
 }
@@ -221,46 +208,38 @@ ul {
 
 .info.name-left {
   top: 58.5px;
-  // top: -18.5px;
   left: 0px;
   color: $text-color-gold;
 }
 
 .info.price-left {
   top: 77px;
-  // top: 1.5px;
   left: -15px;
   color: $text-color-light-gray;
   text-decoration: line-through;
-
 }
 
 .info.price-left-red {
   top: 77px;
-  // top: 1.5px;
   left: 40px;
   color: $text-color-red;
 }
 
 .info.name-right {
   top: 58.5px;
-  // top: -18.5px;
   right: -10px;
   color: $text-color-gold;
 }
 
 .info.price-right {
   top: 77px;
-  // top: 1.5px;
   right: -15px;
   color: $text-color-light-gray;
   text-decoration: line-through;
-
 }
 
 .info.price-right-red {
   top: 77px;
-  // top: 1.5px;
   right: -20px;
 }
 
@@ -361,7 +340,6 @@ h3 {
 
 .big {
   height: 200px;
-
 }
 
 .center {
@@ -392,7 +370,6 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 100%;
-  // background-position-x: 100%;
 }
 
 .small.center.bottom {
@@ -444,12 +421,9 @@ h3 {
   }
 }
 
-
 .big.dx {
   background-image: url(/h3-background-img.jpg);
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-position-x: 0%;
-}
-</style>
-
+}</style>

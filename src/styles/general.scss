@@ -1,33 +1,26 @@
 @use "./partials/variables";
 @import "@fontsource/montserrat";
 @import "@fontsource/pathway-gothic-one";
-
 // @import "bootstrap";
-
-
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     min-width: 1000px;
     overflow-x: hidden;    
-
     // font-family: "Montserrat", sans-serif;
     font-family: Helvetica, sans-serif;
     // font-family: "Pathway Gothic One", sans-serif; 
     
 }
-
 .my-container {
     min-width: 80%;
     max-width: 90%;
     margin: 0 auto;
 }
-
 .d-flex{
     display: flex;
     justify-content: center;
@@ -35,18 +28,14 @@ body {
   }
 .space-between{
     justify-content: space-between;
-
 }
 .text-center{
   text-align: center;
 }
-
   .wrap{
     flex-wrap: wrap;
   }
-
 .no-margin{
     position:relative;
      margin: 0 -5px;
  }
-

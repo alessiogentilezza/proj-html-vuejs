@@ -44,7 +44,7 @@ export default {
           icon: "",
           href: "#landing",
           text: "LANDING",
-        }
+        },
       ],
       navLinksDx: [
         {
