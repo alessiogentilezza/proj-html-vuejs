@@ -25,18 +25,16 @@ body {
 .d-flex-col {
   display: flex;
   flex-direction: column;
-
 }
 
 .justify-center {
-justify-content: center;
+  justify-content: center;
 }
 .space-between {
   justify-content: space-between;
 }
-.items-center{
-    align-items: center;
-
+.items-center {
+  align-items: center;
 }
 
 .text-center {
@@ -48,4 +46,11 @@ justify-content: center;
 .no-margin {
   position: relative;
   margin: 0 -5px;
+}
+.btn {
+  background-color: $background-color-second;
+  color: $text-color-white;
+  padding: .5rem;
+  border: none;
+  cursor: pointer;
 }

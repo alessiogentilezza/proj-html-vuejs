@@ -4,7 +4,7 @@
     <!-- LINK NAVBAR SX -->
     
     <div class="col-25">
-      <button t class="my-btn">ORDER ONLINE</button>
+      <button class="btn">ORDER ONLINE</button>
     </div>
     
     <!-- LINK NAVBAR CC -->
@@ -68,15 +68,7 @@ ul.navbar-links.cc {
 }
 ul.navbar-links.dx {
   justify-content: flex-end;
-}
-.my-btn {
-  background-color:$background-color-second;
-  color:$text-color-white;
-  padding: 1rem;
-  border: none;
-  cursor: pointer;
-}
-.nav-link {
+}.nav-link {
   padding: 0 1rem;
   text-decoration: none;
   color:$text-color-white;

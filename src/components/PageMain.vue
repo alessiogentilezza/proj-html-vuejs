@@ -174,22 +174,33 @@
           </div>
         </div>
         <div class="text-color-gold">************************************************************</div>
-
-
-
-
-
-
-
-
-
       </div>
-
       <div class="col dx-img">
         <img id="img-back" src="/h3-img-5a.jpg" alt="">
       </div>
-
     </div>
+  </section>
+
+  <!-- NONA SEZIONE -->
+
+  <section id="input">
+    <ul class="d-flex data">
+      <li> <input type="text" placeholder="1 Person">
+        <span class="wrap-txt"><i class="fa-solid fa-user-group"></i></span>
+      </li>
+      <div class="wrap-txt">
+        <p>FOR</p>
+      </div>
+      <li> <input type="date" placeholder="11/29/2020">
+      </li>
+      <div class="wrap-txt">
+        <p>AT</p>
+      </div>
+      <li> <input type="time" placeholder="7:00 PM">
+      </li>
+      <li> <button class="btn">BOOK A TABLE</button>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -531,5 +542,66 @@ h3 {
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-position-x: 0%;
+}
+
+// NONA SEZIONE ************
+
+#input {
+  position: relative;
+  height: 220px;
+  background-image: url(/h3-background-img-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.wrap-txt {
+  position: relative;
+  color: $text-color-white;
+}
+
+.data {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  li {
+    height: 30px;
+    width: 200px;
+    margin: 0 2rem;
+  }
+
+  button {
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+
+  }
+
+  input {
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+    color: $text-color-gold;
+
+
+
+  }
+
+  p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+  }
+
+  i {
+    position: absolute;
+    left: -20px;
+    top: 5px;
+    font-size: 12px;
+    color: $text-color-gold;
+  }
 }
 </style>
