@@ -68,7 +68,6 @@
       <div class="small center bottom"></div>
       <div class="small dx bottom"></div>
     </div>
-
   </section>
 
   <!-- QUINTA SEZIONE -->
@@ -220,7 +219,6 @@ export default {
 @use "../styles/partials/variables" as *;
 
 // INIZIO PRIMA SEZIONE ************
-
 ul {
   margin: 5px 0;
   list-style: none;
@@ -238,8 +236,6 @@ ul {
 .col-4.first li {
   margin: 0 2.5px;
 }
-
-// FINE PRIMA SEZIONE ************
 
 #clients-sec {
   background-color: $background-color-third;
@@ -343,8 +339,6 @@ h6 {
   padding: .1rem;
 }
 
-// INIZIO SECONDA SEZIONE ************
-
 #img-front,
 .title {
   width: 50%;
@@ -376,27 +370,9 @@ h6 {
   color: $text-color-dark-gray;
 }
 
-// FINE SECONDA SEZIONE ************
-
-// INIZIO TERZA SEZIONE ************
-
-
 .txt-light-gray {
   color: $text-color-light-gray;
 }
-
-// FINE TERZA SEZIONE ************
-
-
-// OTTAVA SEZIONE ************
-
-
-
-
-
-
-// FINE OTTAVA SEZIONE ************
-
 
 h5 {
   display: inline-block;
@@ -410,8 +386,6 @@ h3 {
 .price {
   color: $text-color-red;
 }
-
-
 
 
 .small {
@@ -508,8 +482,6 @@ h3 {
   background-position-x: 0%;
 }
 
-// NONA SEZIONE ************
-
 #input {
   position: relative;
   height: 220px;
@@ -539,7 +511,6 @@ h3 {
     height: 100%;
     width: 100%;
     font-size: 10px;
-
   }
 
   input {
@@ -571,16 +542,17 @@ h3 {
     top: 40px;
     font-size: 10px;
   }
-
 }
 
 .col.sx-txt {
   height: 100%;
 }
-#input{
+
+#input {
   margin: 5px 0;
 }
-.col { //da spostare
+
+.col {
   position: relative;
   width: 50%;
 
@@ -588,14 +560,13 @@ h3 {
     padding-left: 40px;
   }
 }
+
 .col.dx-txt,
 .sx-txt {
   padding: 5rem;
 }
+
 .text-color-gold {
   padding: 1rem 0;
   color: $text-color-gold;
-}
-
-
-</style>
+}</style>

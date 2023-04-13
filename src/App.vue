@@ -91,7 +91,7 @@ export default {
         },
       ],
       arrayFooterSecond: [
-      {
+        {
           title: "WORKING HOURS",
           day: "MONDAY",
           timeClose: "Kitchen Closed",
@@ -110,6 +110,12 @@ export default {
         },
         {
           day: "FOLLOW US",
+          icon1: "fa-brands fa-twitter",
+          icon2:"fa-brands fa-facebook",
+          icon3:"fa-brands fa-instagram",
+          icon4:"fa-brands fa-linkedin",
+          day2: "FOLLOW US",
+
         },
       ]
 
@@ -134,7 +140,7 @@ export default {
     <PageMain />
   </main>
   <footer>
-    <PageFooter  :arrayFooterFirst="arrayFooterFirst" :arrayFooterSecond="arrayFooterSecond"/>
+    <PageFooter :arrayFooterFirst="arrayFooterFirst" :arrayFooterSecond="arrayFooterSecond" />
   </footer>
 </template>
 

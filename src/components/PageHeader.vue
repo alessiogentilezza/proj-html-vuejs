@@ -92,10 +92,7 @@ ul.navbar-links.dx {
   align-items: center;
   color:$text-color-white;
 }
-.img-small {
-  filter: invert(1);
-  height: 12px;
-}
+
 #logo {
   height: 70px;
   text-align: center;

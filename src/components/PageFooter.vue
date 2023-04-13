@@ -31,12 +31,24 @@
             </div>
             <h5 class="text-color-red ">{{ link.timeClose }}</h5>
             <h5>{{ link.time }}</h5>
+            <span>
+              <i :class="link.icon1"></i>
+              <i :class="link.icon2"></i>
+              <i :class="link.icon3"></i>
+              <i :class="link.icon4"></i>
+            </span>
+
           </li>
         </ul>
       </div>
 
     </div>
-    <div class="col sx-txt"></div>
+    <div class="col sx-txt">
+      <h4 class="text-color-white ">
+        THE DON PEPPE CREW FIRST AND FOREMOST
+        VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.
+      </h4>
+    </div>
 
 
 
@@ -74,14 +86,20 @@ export default {
 
 .col {
   width: calc(100% /3);
-  border: solid red 1px;
 }
 
 .col.sx-txt {
   padding-top: 5rem;
   padding-left: 2rem;
-  span{
+
+  span {
     font-size: 16px;
+
+    i {
+      padding-right: .4rem;
+      color: $text-color-white;
+      font-size: 10px;
+    }
   }
 }
 
@@ -98,5 +116,9 @@ export default {
 
 h3 {
   color: $text-color-gold;
+}
+
+.img {
+  width: 20px;
 }
 </style>
