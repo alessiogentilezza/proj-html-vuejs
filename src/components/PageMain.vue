@@ -17,7 +17,7 @@
       <p><i class="fa-solid fa-quote-left"></i></p>
       <h3>"FORGET THE TRENDY PI77A SHOPS THIS HINDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h3>
       <h6>WASHINGTON POST 2018</h6>
-      <ul class="d-flex">
+      <ul class="d-flex justify-center">
         <li class="circle first"></li>
         <li class="circle"></li>
         <li class="circle"></li>
@@ -138,11 +138,9 @@
 
   <section>
     <div class="d-flex">
-
       <div class="col sx-txt">
         <h6>MADE WITH LOVE</h6>
         <h3 class="text-color-white ">DELISH PIZZA DEALS</h3>
-
         <div class="d-flex">
           <div class="txt-sx">
             <h2 class="text-color-red">02</h2>
@@ -150,10 +148,32 @@
           </div>
           <div class="txt-dx">
             <h4 class="text-color-white">TRADITIONAL NEAPOLITAN PIES IN KYOTO <br> PIZZA MERCATO</h4>
-            <h6 class="text-color-red">204 E. Pizzetta Tommaso</h6>
+            <h6 class="text-color-red"><i class="fa-solid fa-location-dot"></i> 204 E. Pizzetta Tommaso</h6>
           </div>
         </div>
-          <div class="text-color-gold">************************************************************</div>
+        <div class="text-color-gold">************************************************************</div>
+        <div class="d-flex">
+          <div class="txt-sx">
+            <h2 class="text-color-red">03</h2>
+            <h4 class="text-color-white">NOV</h4>
+          </div>
+          <div class="txt-dx">
+            <h4 class="text-color-white">TERARAZZA PATIO DINING SPACE OPENING <br> THIS WEEKEND</h4>
+            <h6 class="text-color-red"><i class="fa-solid fa-location-dot"></i> 204 E. Pizzetta Tommaso</h6>
+          </div>
+        </div>
+        <div class="text-color-gold">************************************************************</div>
+        <div class="d-flex">
+          <div class="txt-sx">
+            <h2 class="text-color-red">05</h2>
+            <h4 class="text-color-white">NOV</h4>
+          </div>
+          <div class="txt-dx">
+            <h4 class="text-color-white">SIENNA PRIVATE DINING ROOM WITH <br> STEPHANE BRUNN</h4>
+            <h6 class="text-color-red"><i class="fa-solid fa-location-dot"></i> 204 E. Pizzetta Tommaso</h6>
+          </div>
+        </div>
+        <div class="text-color-gold">************************************************************</div>
 
 
 
@@ -163,17 +183,6 @@
 
 
 
-        <h3>SPECIALS*</h3>
-        <div class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</div>
-        <h5 class="price">$10</h5>
-        <h5>COMBO PICCOLO</h5>
-        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
-        <h5 class="price">$20</h5>
-        <h5>COMBO MEZZO</h5>
-        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
-        <h5 class="price">$30</h5>
-        <h5>COMBO GRANDE</h5>
-        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
       </div>
 
       <div class="col dx-img">
@@ -382,14 +391,15 @@ h6 {
   background-color: $background-color-first;
   background-size: 100px 100px;
   background-image: radial-gradient(#8F8F8F 1px, transparent 0);
-
+  height: 100%;
 }
 
 .text-color-red {
   color: $text-color-red;
 }
-.text-color-gold{
-  padding: 3rem 0;
+
+.text-color-gold {
+  padding: 1rem 0;
   color: $text-color-gold;
 }
 
@@ -403,7 +413,7 @@ h6 {
 }
 
 
-// OTTAVA SEZIONE ************
+// FINE OTTAVA SEZIONE ************
 
 .col.dx-txt,
 .sx-txt {
@@ -521,4 +531,5 @@ h3 {
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-position-x: 0%;
-}</style>
+}
+</style>
