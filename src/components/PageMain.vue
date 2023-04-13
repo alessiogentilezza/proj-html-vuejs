@@ -187,6 +187,7 @@
     <ul class="d-flex data">
       <li> <input type="text" placeholder="1 Person">
         <span class="wrap-txt"><i class="fa-solid fa-user-group"></i></span>
+        <span class="wrap-txt text-sign">*Powerd by Opentable</span>
       </li>
       <div class="wrap-txt">
         <p>FOR</p>
@@ -239,7 +240,6 @@ ul {
 }
 
 // FINE PRIMA SEZIONE ************
-
 
 #clients-sec {
   background-color: $background-color-third;
@@ -583,9 +583,6 @@ h3 {
     width: 100%;
     font-size: 10px;
     color: $text-color-gold;
-
-
-
   }
 
   p {
@@ -603,5 +600,13 @@ h3 {
     font-size: 12px;
     color: $text-color-gold;
   }
+
+  .text-sign {
+    position: absolute;
+    left: 35px;
+    top: 40px;
+    font-size: 10px;
+  }
+
 }
 </style>
