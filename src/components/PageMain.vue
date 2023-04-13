@@ -85,7 +85,7 @@
   <!-- SESTA SEZIONE -->
 
   <section id="clients-sec" class="col-5 ">
-    <ul class="d-flex">
+    <ul class="d-flex justify-center">
       <li><img src="/h1-clients-img-1.png"></li>
       <li><img src="/h1-clients-img-2.png"></li>
       <li><img src="/h1-clients-img-3.png"></li>
@@ -104,7 +104,7 @@
         qui quidem minus ad possimus saepe aut!
       </p>
     </div>
-    <ul class="d-flex space-between center">
+    <ul class="d-flex space-between items-center">
       <li class="pizza-wrap"><img class="pizza left" src="/h3-product-img-1a-100x100.png">
         <p class="info name-left">BISMARCK</p>
         <span class="info price-left">$25.00</span>
@@ -134,13 +134,35 @@
     </ul>
   </section>
 
-    <!-- OTTAVA SEZIONE -->
+  <!-- OTTAVA SEZIONE -->
 
-    <section>
+  <section>
     <div class="d-flex">
 
-
       <div class="col sx-txt">
+        <h6>MADE WITH LOVE</h6>
+        <h3 class="text-color-white ">DELISH PIZZA DEALS</h3>
+
+        <div class="d-flex">
+          <div class="txt-sx">
+            <h2 class="text-color-red">02</h2>
+            <h4 class="text-color-white">NOV</h4>
+          </div>
+          <div class="txt-dx">
+            <h4 class="text-color-white">TRADITIONAL NEAPOLITAN PIES IN KYOTO <br> PIZZA MERCATO</h4>
+            <h6 class="text-color-red">204 E. Pizzetta Tommaso</h6>
+          </div>
+        </div>
+          <div class="text-color-gold">************************************************************</div>
+
+
+
+
+
+
+
+
+
         <h3>SPECIALS*</h3>
         <div class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</div>
         <h5 class="price">$10</h5>
@@ -160,16 +182,6 @@
 
     </div>
   </section>
-
-
-
-
-
-
-
-
-
-
 </template>
 
 <script>
@@ -205,6 +217,7 @@ ul {
 .col-4.first li {
   margin: 0 2.5px;
 }
+
 // FINE PRIMA SEZIONE ************
 
 
@@ -321,6 +334,7 @@ h6 {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .circle {
   height: 10px;
   width: 10px;
@@ -341,6 +355,7 @@ h6 {
 .txt-dark-gray {
   color: $text-color-dark-gray;
 }
+
 // FINE SECONDA SEZIONE ************
 
 // INIZIO TERZA SEZIONE ************
@@ -353,24 +368,45 @@ h6 {
     padding-left: 40px;
   }
 }
+
 .txt-light-gray {
   color: $text-color-light-gray;
 }
+
 // FINE TERZA SEZIONE ************
 
 
 // OTTAVA SEZIONE ************
 
-.col.sx-txt{
+.col.sx-txt {
   background-color: $background-color-first;
   background-size: 100px 100px;
   background-image: radial-gradient(#8F8F8F 1px, transparent 0);
 
 }
 
+.text-color-red {
+  color: $text-color-red;
+}
+.text-color-gold{
+  padding: 3rem 0;
+  color: $text-color-gold;
+}
+
+
+.txt-sx {
+  padding-right: 1rem;
+}
+
+.txt-sx h2 {
+  padding-bottom: 6px;
+}
+
+
 // OTTAVA SEZIONE ************
 
-.col.dx-txt, .sx-txt {
+.col.dx-txt,
+.sx-txt {
   padding: 5rem;
 }
 

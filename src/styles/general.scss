@@ -21,13 +21,22 @@ body {
 }
 .d-flex {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   // align-items: center;
+}
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.justify-center {
+justify-content: center;
 }
 .space-between {
   justify-content: space-between;
 }
-.center{
+.items-center{
     align-items: center;
 
 }
