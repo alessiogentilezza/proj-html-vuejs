@@ -37,7 +37,7 @@
         <img id="img-back" src="/h1-img-4.jpg" alt="">
         <img id="img-front" src="/h1-img-7n.png" alt="">
       </div>
-      <div class="col dx-txt">
+      <div class="col dx-txt pizza-wrap">
         <h3>SPECIALS*</h3>
         <div class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</div>
         <h5 class="price">$10</h5>
@@ -49,6 +49,9 @@
         <h5 class="price">$30</h5>
         <h5>COMBO GRANDE</h5>
         <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
+        <div class="pizzetta d-flex justify-center items-center">
+          <img src="/svg-4.svg" alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -570,5 +573,19 @@ h3 {
 .text-color-gold {
   padding: 1rem 0;
   color: $text-color-gold;
+}
+
+.pizzetta{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F6F7F2;
+  img{
+    height: 20px;
+  };
+
 }
 </style>
