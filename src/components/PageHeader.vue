@@ -85,7 +85,8 @@ ul.navbar-links.dx {
 .col-50 {
   width: 50%;
 }
-li {
+
+.navbar-links li {
   height: 100%;
   display: flex;
   align-items: center;
@@ -112,4 +113,7 @@ li {
 #pizza-top {
   position: absolute;
   z-index: 10;
-}</style>
+
+}
+
+</style>

@@ -380,14 +380,6 @@ h6 {
 
 // INIZIO TERZA SEZIONE ************
 
-.col {
-  position: relative;
-  width: 50%;
-
-  p {
-    padding-left: 40px;
-  }
-}
 
 .txt-light-gray {
   color: $text-color-light-gray;
@@ -398,38 +390,13 @@ h6 {
 
 // OTTAVA SEZIONE ************
 
-.col.sx-txt {
-  background-color: $background-color-first;
-  background-size: 100px 100px;
-  background-image: radial-gradient(#8F8F8F 1px, transparent 0);
-  height: 100%;
-}
-
-.text-color-red {
-  color: $text-color-red;
-}
-
-.text-color-gold {
-  padding: 1rem 0;
-  color: $text-color-gold;
-}
 
 
-.txt-sx {
-  padding-right: 1rem;
-}
 
-.txt-sx h2 {
-  padding-bottom: 6px;
-}
 
 
 // FINE OTTAVA SEZIONE ************
 
-.col.dx-txt,
-.sx-txt {
-  padding: 5rem;
-}
 
 h5 {
   display: inline-block;
@@ -444,9 +411,6 @@ h3 {
   color: $text-color-red;
 }
 
-.text-color-white {
-  color: $text-color-white;
-}
 
 
 
@@ -609,4 +573,25 @@ h3 {
   }
 
 }
+
+.col.sx-txt {
+  height: 100%;
+}
+#input{
+  margin: 5px 0;
+}
+.col { //da spostare
+  position: relative;
+  width: 50%;
+
+  p {
+    padding-left: 40px;
+  }
+}
+.col.dx-txt,
+.sx-txt {
+  padding: 5rem;
+}
+
+
 </style>

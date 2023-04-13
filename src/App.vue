@@ -58,7 +58,46 @@ export default {
           text: "SEARCH",
         },
 
+      ],
+      arrayFooterFirst: [
+        {
+          title: "FIND OUR RESTAURANTS",
+          links1: [
+            "1614 E. Bell Rd #104",
+            "Salerno, AZ 85022",
+            "(602) 867-1010",
+          ]
+        },
+        {
+          links2: [
+            "204 E. Pizzetta Tommaso",
+            "Sorrento, AZ 85022",
+            "(358) 867-1010",
+          ]
+        },
+        {
+          links3: [
+            "Via Puglia 54",
+            "Torre Del Greco AZ 85022",
+            "(359) 867-1010",
+          ]
+        },
+        {
+          links4: [
+            "Corso Italia",
+            "Naples, AZ 85022",
+            "989) 867-1010",
+          ]
+        },
+      ],
+      arrayFooterSecond: [
+        {
+          title: "WORKING HOURS",
+          day: "WORKING HOURS",
+          title3: "WORKING HOURS",
+        },
       ]
+
 
     }
   },
@@ -77,8 +116,11 @@ export default {
     <PageHeader :arrayNavSX="navLinksSx" :arrayNavDX="navLinksDx" />
   </header>
   <main>
-  <PageMain/>
+    <PageMain />
   </main>
+  <footer>
+    <PageFooter  :arrayFooterFirst="arrayFooterFirst" :arrayFooterSecond="arrayFooterSecond"/>
+  </footer>
 </template>
 
 <style lang="scss">
@@ -92,6 +134,6 @@ header {
 
   background-size: 100px 100px;
   background-image: radial-gradient(#8F8F8F 1px, transparent 0);
-  
-  }
+
+}
 </style>
