@@ -1,5 +1,5 @@
 <template>
-  <nav class="my-container">
+  <nav class="container">
 
     <!-- LINK NAVBAR SX -->
     
@@ -54,7 +54,7 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/general.scss";
 @use "../styles/partials/variables" as *;
-nav.my-container {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,7 +95,7 @@ li {
 }
 .img-small {
   filter: invert(1);
-  height: 10px;
+  height: 16px;
 }
 #logo {
   height: 70px;

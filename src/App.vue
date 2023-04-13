@@ -87,16 +87,11 @@ export default {
 
 header {
   height: 500px;
-  // display: flex;
-  // flex-direction: column;
   background-color: $background-color-first;
   padding-top: 30px;
-
-  // background-color: #8F8F8F;
 
   background-size: 100px 100px;
   background-image: radial-gradient(#8F8F8F 1px, transparent 0);
   
-
-}
+  }
 </style>

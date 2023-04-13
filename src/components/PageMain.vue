@@ -104,7 +104,7 @@
         qui quidem minus ad possimus saepe aut!
       </p>
     </div>
-    <ul class="d-flex space-between">
+    <ul class="d-flex space-between center">
       <li class="pizza-wrap"><img class="pizza left" src="/h3-product-img-1a-100x100.png">
         <p class="info name-left">BISMARCK</p>
         <span class="info price-left">$25.00</span>
@@ -133,6 +133,43 @@
       </li>
     </ul>
   </section>
+
+    <!-- OTTAVA SEZIONE -->
+
+    <section>
+    <div class="d-flex">
+
+
+      <div class="col sx-txt">
+        <h3>SPECIALS*</h3>
+        <div class="txt-light-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto?</div>
+        <h5 class="price">$10</h5>
+        <h5>COMBO PICCOLO</h5>
+        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
+        <h5 class="price">$20</h5>
+        <h5>COMBO MEZZO</h5>
+        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
+        <h5 class="price">$30</h5>
+        <h5>COMBO GRANDE</h5>
+        <p class="txt-light-gray">Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="col dx-img">
+        <img id="img-back" src="/h3-img-5a.jpg" alt="">
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
 </template>
 
 <script>
@@ -148,6 +185,8 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/general.scss";
 @use "../styles/partials/variables" as *;
+
+// INIZIO PRIMA SEZIONE ************
 
 ul {
   margin: 5px 0;
@@ -166,6 +205,8 @@ ul {
 .col-4.first li {
   margin: 0 2.5px;
 }
+// FINE PRIMA SEZIONE ************
+
 
 #clients-sec {
   background-color: $background-color-third;
@@ -269,6 +310,17 @@ h6 {
   padding: .1rem;
 }
 
+// INIZIO SECONDA SEZIONE ************
+
+#img-front,
+.title {
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .circle {
   height: 10px;
   width: 10px;
@@ -286,6 +338,13 @@ h6 {
   width: 100%;
 }
 
+.txt-dark-gray {
+  color: $text-color-dark-gray;
+}
+// FINE SECONDA SEZIONE ************
+
+// INIZIO TERZA SEZIONE ************
+
 .col {
   position: relative;
   width: 50%;
@@ -294,19 +353,25 @@ h6 {
     padding-left: 40px;
   }
 }
+.txt-light-gray {
+  color: $text-color-light-gray;
+}
+// FINE TERZA SEZIONE ************
 
-#img-front,
-.title {
-  width: 50%;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+
+// OTTAVA SEZIONE ************
+
+.col.sx-txt{
+  background-color: $background-color-first;
+  background-size: 100px 100px;
+  background-image: radial-gradient(#8F8F8F 1px, transparent 0);
+
 }
 
-.col.dx-txt {
-  padding: 0 5rem;
+// OTTAVA SEZIONE ************
+
+.col.dx-txt, .sx-txt {
+  padding: 5rem;
 }
 
 h5 {
@@ -326,13 +391,7 @@ h3 {
   color: $text-color-white;
 }
 
-.txt-dark-gray {
-  color: $text-color-dark-gray;
-}
 
-.txt-light-gray {
-  color: $text-color-light-gray;
-}
 
 .small {
   height: 100px;
