@@ -54,34 +54,42 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/general.scss";
 @use "../styles/partials/variables" as *;
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
 }
+
 .navbar-links {
   display: flex;
 }
+
 ul.navbar-links.cc {
   justify-content: center;
 }
+
 ul.navbar-links.dx {
   justify-content: flex-end;
-  i{
+
+  i {
     font-size: 12px;
   }
 
+}
 
-}.nav-link {
+.nav-link {
   padding: 0 1rem;
   text-decoration: none;
-  color:$text-color-white;
+  color: $text-color-white;
   font-size: 12px;
 }
-.col-25{
+
+.col-25 {
   width: 25%;
 }
+
 .col-50 {
   width: 50%;
 }
@@ -90,27 +98,27 @@ ul.navbar-links.dx {
   height: 100%;
   display: flex;
   align-items: center;
-  color:$text-color-white;
+  color: $text-color-white;
 }
 
 #logo {
   height: 70px;
   text-align: center;
 }
+
 .wrap {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 90%;
+
   & img {
     height: 80%;
   }
 }
+
 #pizza-top {
   position: absolute;
   z-index: 10;
-
-}
-
-</style>
+}</style>

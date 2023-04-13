@@ -1,7 +1,7 @@
 <template>
   <div id="footer" class="d-flex">
 
-<!-- COLONNA SX 1 -->
+    <!-- COLONNA SX 1 -->
 
     <div class="col sx-txt logo-wrap">
       <div v-for="(link, i) in arrayFooterFirst" :key="i">
@@ -27,7 +27,7 @@
       </div>
     </div>
 
-<!-- COLONNA SX 2 -->
+    <!-- COLONNA SX 2 -->
 
     <div class="col sx-txt">
       <div v-for="(link, i) in arrayFooterSecond" :key="i">
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-<!-- COLONNA SX 3 -->
+    <!-- COLONNA SX 3 -->
 
     <div class="col sx-txt logo-wrap">
       <h4 class="text-color-white ">
@@ -61,7 +61,7 @@
       <img src="/h5-logo-divided-header.png" alt="">
     </div>
 
-<!-- COLONNA DX IMG -->
+    <!-- COLONNA DX IMG -->
 
     <div class="col-dx dx-img">
       <img src="/footer-img-1.jpg" alt="">
@@ -70,7 +70,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'PageFooter',
   props: {
@@ -78,12 +77,10 @@ export default {
     arrayFooterSecond: Array
   },
 
-
   data() {
     return {
     }
   },
-
 }
 </script>
 
@@ -146,6 +143,5 @@ h3 {
   left: 20px;
   font-size: 10px;
   line-height: 12px;
-
 }
 </style>

@@ -3,7 +3,6 @@ import PageHeader from './components/PageHeader.vue';
 import PageMain from './components/PageMain.vue';
 import PageFooter from './components/PageFooter.vue';
 
-
 export default {
   data() {
     return {
@@ -27,9 +26,7 @@ export default {
           icon: "",
           logo: "/h5-logo-divided-header.png",
           text: "",
-
         },
-
         {
           icon: "",
           href: "#event",
@@ -57,7 +54,6 @@ export default {
           href: "#search",
           text: "SEARCH",
         },
-
       ],
       arrayFooterFirst: [
         {
@@ -111,14 +107,12 @@ export default {
         {
           day: "FOLLOW US",
           icon1: "fa-brands fa-twitter",
-          icon2:"fa-brands fa-facebook",
-          icon3:"fa-brands fa-instagram",
-          icon4:"fa-brands fa-linkedin",
+          icon2: "fa-brands fa-facebook",
+          icon3: "fa-brands fa-instagram",
+          icon4: "fa-brands fa-linkedin",
           day2: "FOLLOW US",
-
         },
       ]
-
 
     }
   },
@@ -126,9 +120,7 @@ export default {
     PageHeader,
     PageMain,
     PageFooter,
-
   }
-
 }
 </script>
 
@@ -152,9 +144,7 @@ header {
   height: 500px;
   background-color: $background-color-first;
   padding-top: 30px;
-
   background-size: 100px 100px;
   background-image: radial-gradient(#8F8F8F 1px, transparent 0);
-
 }
 </style>

@@ -1,4 +1,5 @@
 <template>
+  
   <!-- PRIMA SEZIONE -->
 
   <section class="no-margin col-4 first">
@@ -569,4 +570,5 @@ h3 {
 .text-color-gold {
   padding: 1rem 0;
   color: $text-color-gold;
-}</style>
+}
+</style>
