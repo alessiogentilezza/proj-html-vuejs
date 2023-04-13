@@ -2,13 +2,13 @@
   <nav class="container">
 
     <!-- LINK NAVBAR SX -->
-    
+
     <div class="col-25">
       <button class="btn">ORDER ONLINE</button>
     </div>
-    
+
     <!-- LINK NAVBAR CC -->
-    
+
     <div class="col-50">
       <ul class="navbar-links cc">
         <li v-for="(link, i) in arrayNavSX" :key="i">
@@ -18,9 +18,9 @@
         </li>
       </ul>
     </div>
-    
+
     <!-- LINK NAVBAR DX -->
-    
+
     <div class="col-25">
       <ul class="navbar-links dx">
         <li v-for="(link, i) in arrayNavDX" :key="i">
@@ -68,10 +68,16 @@ ul.navbar-links.cc {
 }
 ul.navbar-links.dx {
   justify-content: flex-end;
+  i{
+    font-size: 12px;
+  }
+
+
 }.nav-link {
   padding: 0 1rem;
   text-decoration: none;
   color:$text-color-white;
+  font-size: 12px;
 }
 .col-25{
   width: 25%;
@@ -87,7 +93,7 @@ li {
 }
 .img-small {
   filter: invert(1);
-  height: 16px;
+  height: 12px;
 }
 #logo {
   height: 70px;
