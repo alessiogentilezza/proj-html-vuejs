@@ -63,8 +63,12 @@
 
     <!-- COLONNA DX IMG -->
 
-    <div class="col-dx dx-img">
+    <div class="col-dx dx-img pizza-wrap">
       <img src="/footer-img-1.jpg" alt="">
+      <div class="pizzetta d-flex justify-center items-center">
+          <img src="/svg-4.svg" alt="">
+        </div>
+
     </div>
   </div>
 </template>
@@ -143,5 +147,17 @@ h3 {
   left: 20px;
   font-size: 10px;
   line-height: 12px;
+}
+.pizzetta{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F6F7F2;
+  img{
+    height: 20px;
+  };
 }
 </style>

@@ -264,9 +264,6 @@ ul {
   padding: 3rem 0;
 }
 
-.pizza-wrap {
-  position: relative;
-}
 
 .pizza {
   position: absolute;
