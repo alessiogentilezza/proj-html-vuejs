@@ -592,6 +592,10 @@ h3 {
 .sx-txt {
   padding: 5rem;
 }
+.text-color-gold {
+  padding: 1rem 0;
+  color: $text-color-gold;
+}
 
 
 </style>

@@ -91,10 +91,25 @@ export default {
         },
       ],
       arrayFooterSecond: [
-        {
+      {
           title: "WORKING HOURS",
-          day: "WORKING HOURS",
-          title3: "WORKING HOURS",
+          day: "MONDAY",
+          timeClose: "Kitchen Closed",
+        },
+        {
+          day: "TUSEDAY UNTIL FRIDAY",
+          time: "9:00 - 22:00",
+        },
+        {
+          day: "SATURDAY",
+          time: "Saturday 11am to midnight",
+        },
+        {
+          day: "SUNDAY",
+          time: "9:00 - 22:00",
+        },
+        {
+          day: "FOLLOW US",
         },
       ]
 
